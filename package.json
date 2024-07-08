@@ -1,0 +1,23 @@
+{
+  "name": "lesson",
+  "version": "1.0.0",
+  "main": "calculate.ts",
+  "scripts": {
+    "testmocha": "mocha",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/jest": "^29.5.12",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.9",
+    "chai": "^5.1.1",
+    "mocha": "^10.6.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
