@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@types/selenium-webdriver": "^4.1.24",
+    "@types/superagent": "^8.1.7",
+    "chromedriver": "^126.0.4",
+    "Faker": "^0.7.2",
+    "jest": "^29.7.0",
+    "selenium-webdriver": "^4.22.0",
+    "superagent": "^9.0.2",
+    "ts-jest": "^29.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "name": "lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
