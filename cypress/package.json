@@ -1,0 +1,11 @@
+{
+  "script": {
+    "test":"cypress open"
+  },
+  "dependencies": {
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.1"
+  }
+}
