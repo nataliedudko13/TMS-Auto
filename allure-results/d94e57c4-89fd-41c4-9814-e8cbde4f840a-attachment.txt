@@ -1,0 +1,8 @@
+/Users/natalie/Desktop/TMS_Auto/playwright/src/pages/navigationBar.ts:31
+  async getResult() {
+                 ^
+
+RangeError: Maximum call stack size exceeded
+(Use `node --trace-uncaught ...` to show where the exception was thrown)
+
+Node.js v20.13.0
