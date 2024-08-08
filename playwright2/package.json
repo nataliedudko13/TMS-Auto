@@ -1,0 +1,20 @@
+{
+  "name": "tms_auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright tests --reporter=allure-playwright",
+    "allure:reporter": "npx allure generate ./allure-results --clean && allure open ./allure-reporter",
+    "allure:open": "npx allure open ./allure-reporter"
+  },
+  "keywords": [],
+  "author": "", 
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.1.0",
+    "allure-playwright": "^3.0.0-beta.8",
+    "allure-commandline": "^2.30.0"
+  }
+}
