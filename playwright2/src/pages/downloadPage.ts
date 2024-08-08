@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { DOWNLOAD_URL, TS_URL } from "../src/consts/common.const";
+import { DOWNLOAD_URL, TS_URL } from "../consts/common.const";
 
 export class DownloadPage {
   public page: Page;
@@ -26,20 +26,20 @@ export class DownloadPage {
     await this.searchLink.click();
   }
 
-  public get chooseSiteColours() {
-    return this.page.locator("//select[@name='colours']");
+  public chooseSiteColours() {
+    return this.page.locator("//select[@name='colours']").click();
   }
   async clickSiteColours() {
-    await this.chooseSiteColours.click();
+    this.chooseSiteColours;
   }
   
-  public get chooseColours() {
+  public chooseColours() {
     return this.page.locator(
       "//*[@id='customize']/article/label[1]/div/select/option[3]"
-    );
+    ).click();
   }
   async clickDark() {
-    await this.chooseColours.click();
+    this.chooseColours;
   }
 
   public async closePage() {

@@ -1,16 +1,15 @@
 import { Page } from "@playwright/test";
-import { BASE_URL } from "../src/consts/common.const";
+import { BASE_URL } from "../consts/common.const";
+import { BasePage } from "./basePage";
 
-export class StartPage {
+export class StartPage extends BasePage {
   public page: Page;
-
   constructor(page: Page) {
-    this.page = page;
+    super(page);
+    this.url = "https://www.typescriptlang.org/";
   }
-  async navigate() {
-    await this.page.goto(BASE_URL);
-  }
-  public get titleText() {
+
+  public  getTitleText() {
     return this.page.locator("//div[@class=' col1']/h1");
   }
   public get titleTable() {
@@ -20,8 +19,4 @@ export class StartPage {
     await this.titleTable.click();
   }
 
-
-  public async closePage() {
-    return await this.page.close();
-  }
 }

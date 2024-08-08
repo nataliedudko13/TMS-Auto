@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { BASE_URL, DOWNLOAD_URL, HANDBOOK_URL } from "../src/consts/common.const";
+import { BASE_URL, DOWNLOAD_URL, HANDBOOK_URL } from "../consts/common.const";
 
 export class NavigateBar {
   public page: Page;
@@ -51,7 +51,7 @@ await this.page.goto(HANDBOOK_URL)
     return this.page.locator("//span[@class='ds-dropdown-menu ds-with-5']")
   }
 async getResult(){
-     await this.getResult()
+     this.resultSearch
 }
 
   public async closePage(){
@@ -59,4 +59,3 @@ async getResult(){
 }
 }
 
-//div[@class='algolia-docsearch-suggestion--subcategory-inline'][text()[contains(.,'Migrating from JavaScript')]]

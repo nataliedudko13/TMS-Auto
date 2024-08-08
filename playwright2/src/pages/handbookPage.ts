@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { HANDBOOK_URL } from "../src/consts/common.const";
+import { HANDBOOK_URL } from "../consts/common.const";
 
 export class HandbookPage {
     public page: Page;

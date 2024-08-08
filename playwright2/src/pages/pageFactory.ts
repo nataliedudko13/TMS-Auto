@@ -1,9 +1,9 @@
 import { Page } from "@playwright/test";
 import { StartPage } from "./startPage";
-import { NavigateBar } from "./navigationBar";
 import { DownloadPage } from "./downloadPage";
 import { HandbookPage } from "./handbookPage";
-import { Pages } from "../src/consts/common.const";
+import { Pages } from "../consts/common.const";
+import { NavigateBar } from "../elements/navigationBar";
 
 
 export class PageFactory{
